@@ -1,7 +1,12 @@
 <p>test works!</p>
 
+<h4>Filter The Person</h4>
+
+ <input type="text" [ngModel]="searchQuery"><input type="button" value="Search" (click)="searchFunction()">
+
 <ul>
     <li *ngFor="let i of obj2.ArrayOfObj1">{{i.name}}</li>
 </ul>
+
 
 <app-testtwo></app-testtwo>

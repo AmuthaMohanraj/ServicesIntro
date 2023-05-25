@@ -1,8 +1,8 @@
 export class Person{
     ArrayOfObj1:any=[
-        {name:'mohanraj',age:21,message:'hai'},
-        {name:'chandru',age:23,message:'welcome'},
-        {name:'poongodi',age:25,message:'hello'},
-        {name:'komathi',age:19,message:'hai buddy'}
+        {name:'Mohanraj',age:21,message:'hai'},
+        {name:'Chandru',age:23,message:'welcome'},
+        {name:'Poongodi',age:25,message:'hello'},
+        {name:'Komathi',age:19,message:'hai buddy'}
       ];
 }

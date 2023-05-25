@@ -8,4 +8,16 @@ import { Person } from '../commonjson';
 })
 export class TestComponent {
    obj2=new Person();
+
+   searchQuery:string='';
+   filterTableData:object[]=[];
+
+
+   searchFunction(){
+     this.filterTableData=this.obj2.ArrayOfObj1.filter((e:any)=>{
+        e.name.toLowerCase().includes(this.searchQuery.toLowerCase());
+        console.log(e.name.toLowerCase().includes(this.searchQuery.toLowerCase()))
+     })
+   }
+
 }
