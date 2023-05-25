@@ -5,4 +5,5 @@ export class Person{
         {name:'Poongodi',age:25,message:'hello'},
         {name:'Komathi',age:19,message:'hai buddy'}
       ];
-}
+
+ }

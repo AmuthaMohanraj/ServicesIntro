@@ -1,0 +1,15 @@
+<h2>servicetest works!</h2>
+
+<div id="bird-container">
+    <div *ngFor="let bird of reciveData" class="card">
+      <h2>{{ bird.species }}</h2>
+      <p>Scientific Name: {{ bird.scientificName }}</p>
+      <p>Habitat: {{ bird.habitat }}</p>
+      <p>Wingspan: {{ bird.wingspan }}</p>
+      <p>Lifespan: {{ bird.lifespan }}</p>
+    </div>
+  </div>
+
+  <app-servicetest2></app-servicetest2>
+
+  

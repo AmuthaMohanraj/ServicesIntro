@@ -1,0 +1,23 @@
+<h2>servicetest2 works!</h2>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Species</th>
+        <th>Scientific Name</th>
+        <th>Habitat</th>
+        <th>Wingspan</th>
+        <th>Lifespan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let bird of reciveData">
+        <td>{{ bird.species }}</td>
+        <td>{{ bird.scientificName }}</td>
+        <td>{{ bird.habitat }}</td>
+        <td>{{ bird.wingspan }}</td>
+        <td>{{ bird.lifespan }}</td>
+      </tr>
+    </tbody>
+  </table>
+

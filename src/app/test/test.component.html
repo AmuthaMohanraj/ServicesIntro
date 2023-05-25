@@ -2,11 +2,29 @@
 
 <h4>Filter The Person</h4>
 
- <input type="text" [ngModel]="searchQuery"><input type="button" value="Search" (click)="searchFunction()">
+ <input type="text" [(ngModel)]="searchQuery">
+ <input type="button" value="Search" (click)="searchFunction()">
 
-<ul>
-    <li *ngFor="let i of obj2.ArrayOfObj1">{{i.name}}</li>
-</ul>
+ <table *ngIf="filterTableData.length>0">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let i of filterTableData">
+            <td>{{i.name}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.message}}</td>
+        </tr>
+    </tbody>
+</table>
+
+    <h2 *ngIf="filterTableData.length===0">Wrong Choice</h2> 
 
 
 <app-testtwo></app-testtwo>
+<app-servicetest></app-servicetest>
