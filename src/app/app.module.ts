@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ServicesService } from './services.service';
 import { ServicetestComponent } from './servicetest/servicetest.component';
 import { Servicetest2Component } from './servicetest2/servicetest2.component';
+import { HttpClientModule  } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,11 +23,12 @@ import { Servicetest2Component } from './servicetest2/servicetest2.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
-    ServicesService
+    ServicesService,
+   
   ],
   bootstrap: [AppComponent]
 })

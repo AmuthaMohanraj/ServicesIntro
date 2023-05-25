@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { ServicesService } from '../services.service';
+import {RulesOfBirds} from '../services.service'
 
 @Component({
   selector: 'app-servicetest',
@@ -9,13 +10,18 @@ import { ServicesService } from '../services.service';
 export class ServicetestComponent implements OnInit {
 
 
-  reciveData:any;
-  
+  reciveData:RulesOfBirds[]=[];
+  serverData:any;
+
   constructor(public s:ServicesService){
+
   }
+    
   
  ngOnInit(){
-    this.reciveData=this.s.getBirdsList();
- }
+  this.s.getBirdsListLikeServer().subscribe((data) =>{
+    this.serverData = data;
+    console.log(this.serverData);
+  });}
 
 }
